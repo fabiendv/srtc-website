@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* SRTC design system — mockup A: editorial serif, cream and clay.
+   Palette: cream ground, clay-orange accent, dark green secondary, warm near-black text. */
+@theme {
+  --color-cream: #f7f2e9;
+  --color-cream-deep: #efe7d6;
+  --color-clay: #b85c38;
+  --color-clay-dark: #9a4a2c;
+  --color-forest: #2e4a3d;
+  --color-forest-light: #3d5f4f;
+  --color-ink: #23201b;
+  --color-muted: #6e655a;
+  --color-line: #e4dbcb;
+
+  --font-serif: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+/* Focus visibility for keyboard users (accessibility target: Lighthouse a11y >=90). */
+:focus-visible {
+  outline: 2px solid var(--color-clay);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* News post body (rendered markdown → HTML). Kept small on purpose; no typography plugin. */
+.prose-srtc {
+  color: var(--color-ink);
+  line-height: 1.75;
+}
+.prose-srtc p {
+  margin: 1rem 0;
+}
+.prose-srtc h2 {
+  font-size: 1.5rem;
+  margin: 2rem 0 0.75rem;
+  color: var(--color-forest);
+}
+.prose-srtc h3 {
+  font-size: 1.25rem;
+  margin: 1.5rem 0 0.5rem;
+  color: var(--color-forest);
+}
+.prose-srtc ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+.prose-srtc ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+.prose-srtc li {
+  margin: 0.35rem 0;
+}
+.prose-srtc a {
+  color: var(--color-clay);
+  text-decoration: underline;
+}
+.prose-srtc strong {
+  font-weight: 600;
+  color: var(--color-ink);
+}
