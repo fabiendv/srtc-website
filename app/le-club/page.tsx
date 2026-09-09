@@ -67,12 +67,22 @@ export default function LeClubPage() {
           <p className="mt-2 text-cream/80">
             Écrivez-nous pour connaître les modalités d&apos;adhésion et venir essayer.
           </p>
-          <Link
-            href="/contact"
-            className="mt-5 inline-block rounded-full bg-clay px-6 py-3 text-sm font-medium text-cream transition-colors hover:bg-clay-dark"
-          >
-            Contactez-nous
-          </Link>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <Link
+              href="/contact"
+              className="inline-block rounded-full bg-clay px-6 py-3 text-sm font-medium text-cream transition-colors hover:bg-clay-dark"
+            >
+              Contactez-nous
+            </Link>
+            <a
+              href="https://srtc.mojohelpdesk.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-full border border-cream/40 px-6 py-3 text-sm font-medium text-cream transition-colors hover:bg-cream/10"
+            >
+              Besoin d&apos;aide
+            </a>
+          </div>
         </div>
       </section>
     </>
