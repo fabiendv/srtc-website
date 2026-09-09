@@ -53,6 +53,14 @@ export default function HomePage() {
                 >
                   Nous contacter
                 </Link>
+                <a
+                  href="https://srtc.mojohelpdesk.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full border border-cream/40 px-6 py-3 text-sm font-medium text-cream transition-colors hover:bg-cream/10"
+                >
+                  Besoin d&apos;aide
+                </a>
               </div>
             </div>
           </div>
@@ -166,12 +174,22 @@ export default function HomePage() {
               Écrivez-nous, on vous répond vite. Membres, futurs membres, ou simple curieux : tout le monde est le bienvenu.
             </p>
           </div>
-          <Link
-            href="/contact"
-            className="shrink-0 rounded-full bg-clay px-7 py-3 text-sm font-medium text-cream transition-colors hover:bg-clay-dark"
-          >
-            Nous contacter
-          </Link>
+          <div className="flex shrink-0 flex-wrap gap-3">
+            <Link
+              href="/contact"
+              className="rounded-full bg-clay px-7 py-3 text-sm font-medium text-cream transition-colors hover:bg-clay-dark"
+            >
+              Nous contacter
+            </Link>
+            <a
+              href="https://srtc.mojohelpdesk.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border border-cream/40 px-7 py-3 text-sm font-medium text-cream transition-colors hover:bg-cream/10"
+            >
+              Besoin d&apos;aide
+            </a>
+          </div>
         </div>
       </section>
     </>
